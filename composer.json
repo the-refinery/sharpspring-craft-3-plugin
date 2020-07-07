@@ -1,0 +1,46 @@
+{
+    "name": "therefinery/sharpspring-integration",
+    "description": "A CraftCMS 3 plugin to integrate with SharpSpring CRM.",
+    "type": "craft-plugin",
+    "version": "3.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "sharpspring integration"
+    ],
+    "support": {
+        "docs": "https://github.com/the-refinery/sharpspring-craft-3-plugin/blob/master/README.md",
+        "issues": "https://github.com/the-refinery/sharpspring-craft-3-plugin/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "The Refinery",
+            "homepage": "https://the-refinery.io"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "therefinery\\sharpspringintegration\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Sharpspring Integration",
+        "handle": "sharpspring-integration",
+        "developer": "The Refinery",
+        "developerUrl": "https://the-refinery.io",
+        "documentationUrl": "https://github.com/the-refinery/sharpspring-craft-3-plugin/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/the-refinery/sharpspring-craft-3-plugin/master/CHANGELOG.md",
+        "components": {
+            "apiClient": "therefinery\\sharpspringintegration\\services\\ApiClient",
+            "mappingConfig": "therefinery\\sharpspringintegration\\services\\MappingConfig",
+            "nativeFormClient": "therefinery\\sharpspringintegration\\services\\NativeFormClient"
+        },
+        "class": "therefinery\\sharpspringintegration\\SharpspringIntegration"
+    }
+}

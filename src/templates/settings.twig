@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Sharpspring Integration plugin for Craft CMS 3.x
+ *
+ * Sharpspring Integration Settings.twig
+ *
+ * @author    The Refinery
+ * @copyright Copyright (c) 2020 The Refinery
+ * @link      https://the-refinery.io
+ * @package   SharpspringIntegration
+ * @since     3.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("therefinery\\sharpspringintegration\\assetbundles\\sharpspringintegration\\SharpspringIntegrationAsset") %}
+
+{{ forms.textField({
+    label: 'Some Field',
+    instructions: 'Enter some setting here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: settings['someAttribute']})
+}}
