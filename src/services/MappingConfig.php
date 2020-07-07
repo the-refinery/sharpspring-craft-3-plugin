@@ -52,9 +52,9 @@ class MappingConfig extends Component
      * @return mixed
      */
     public function setup() {
-        $this->setupEntryMappings();
         // Not currently used - needs testing for Craft 3
-        //$this->setupFreeformMappings();
+        //$this->setupEntryMappings();
+        $this->setupFreeformMappings();
     }
 
 
